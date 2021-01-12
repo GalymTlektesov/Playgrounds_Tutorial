@@ -115,6 +115,25 @@ var year = 2021
 print(String(day) + month + String(year))
 //: *4*
 
+//: *5*
+var isDragon = true, isTroll = false
+
+let onlyDragon = isDragon && isTroll
+let notOnlyDragon = isDragon || isTroll
+print(onlyDragon)
+print(notOnlyDragon)
+
+//: *5.2*
+//( ( true && false ) || true )  = true
+//true && false && true || ( true || false ) = true
+//false || ( false || true ) && ( true && false ) = false
+//
+//if ( ( true && false ) || true ) { print("perfect!") }
+//if true && false && true || ( true || false ) { print("perfect!") }
+//if false || ( false || true ) && ( true && false ) { print("perfect!") }
+//: *5*
+
+
 
 
 
