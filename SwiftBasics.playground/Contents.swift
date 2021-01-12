@@ -39,7 +39,8 @@ var numOne: Int8 = 0
 print(numOne)
 
 let binaryInteger = 0b101
-//: **Задние**
+//: **Задание**
+
 //: *1*
 var x: UInt8
 var y: Int8
@@ -60,11 +61,13 @@ print("varOne=\(varOne)")
 print("varTwo=\(varTwo) \n")
 
 //: *1*
+
 //: *2*
 let floatOne: Float = 34.23
 let floatTwo: Float
 var numDouble: Double
 //: *2*
+
 //: *3.1*
 let intNum: Int, floatNum: Float, doubleNUm: Double
 intNum = 18; floatNum = 16.4; doubleNUm = 5.7
@@ -93,6 +96,7 @@ let l = 3.14 * (lenght * 2)
 print("l=\(l)")
 
 //: *3*
+
 //: *4.1*
 var rock4 = "Rock"
 var j4 = Character("j")
@@ -133,6 +137,18 @@ print(notOnlyDragon)
 //if false || ( false || true ) && ( true && false ) { print("perfect!") }
 //: *5*
 
+//: *6.1*
+typealias name = String
+typealias weight = Double
+typealias height = Int
+
+let myName: name = "Galym "
+var myWeight: weight = 50.7
+var myHeight: height = 170
+
+var imt = myWeight / ((Double(myHeight) / 100 ) * (Double(myHeight) / 100 ))
+
+print(myName + String(Float(imt)))
 
 
 
