@@ -17,6 +17,34 @@ public func whoIsBigger(a: Int, b: UInt){
     }
 }
 
+//let myProgramStatus: (Int, String, Bool) = (200, "In Work", true)
+//let myProgramStatus : (stausCode: Int, statusText: String, statusConnect: Bool) = (200, "In Work", true)
+var myProgramStatus = (statusCode: 200, statusText: "In Work", statusConnect: true)
+myProgramStatus.0 += 10
+
+print(myProgramStatus)
+
+print(myProgramStatus.1)
+
+var (myName, myAge) = ("Тролль", 140)
+
+let person = (myName, myAge)
+
+print("Меня зовут \(person.0), и мне \(person.1) лет")
+
+
+//var (statusCode, _, _) = myProgramStatus
+
+print("Код ответа - \(myProgramStatus.statusCode)")
+print("Текст ответа - \(myProgramStatus.statusText)")
+print("Связь с сервером - \(myProgramStatus.2)")
+
+
+var me = (myProgramStatus, age: 20, name: "Galym")
+
+print(me.0.statusCode)
+
+
 var longString = """
 Очень длинный
 И многострочный
@@ -142,14 +170,30 @@ typealias name = String
 typealias weight = Double
 typealias height = Int
 
-let myName: name = "Galym "
-var myWeight: weight = 50.7
-var myHeight: height = 170
+let myName6: name = "Galym "
+var myWeight6: weight = 50.7
+var myHeight6: height = 170
 
-var imt = myWeight / ((Double(myHeight) / 100 ) * (Double(myHeight) / 100 ))
+var imt = myWeight6 / ((Double(myHeight6) / 100 ) * (Double(myHeight6) / 100 ))
 
-print(myName + String(Float(imt)))
+print(myName6 + String(Float(imt)))
+//: *6*
 
+//: *7*
+var myPreferences = (Movie: "Movie", number: 12,food: "Soup")
 
+let (movie, number, food) = myPreferences
+var noMyPreferences = (Movie: "Film", number: 7, food: "meat")
+
+(myPreferences, noMyPreferences) = (noMyPreferences, myPreferences)
+
+print("My preferences: \(myPreferences)")
+print("No my preferences: \(noMyPreferences)")
+
+let hePreferences = ( myPreferences.number, noMyPreferences.number, myPreferences.number - noMyPreferences.number)
+
+print(hePreferences)
+
+//: *7*
 
 
