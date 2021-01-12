@@ -17,12 +17,17 @@ public func whoIsBigger(a: Int, b: UInt){
     }
 }
 
-var drogonName: String
+var longString = """
+Очень длинный
+И многострочный
+текст
+"""
+print(longString)
 var a1 = 34
 var b2 = 7
 
 var c3 = "Summ: " + String(a1 + b2)
-drogonName = c3
+var drogonName = String(c3)
 
 let Group = Int.max, 🎉 = UInt.max
 let `var` = 7
@@ -32,6 +37,8 @@ var intMax = Int.max
 var numOne: Int8 = 0
 // Ошибка слишком большое значение numOne = Int8(intMax)
 print(numOne)
+
+let binaryInteger = 0b101
 //: **Задние**
 //: *1*
 var x: UInt8
@@ -86,6 +93,28 @@ let l = 3.14 * (lenght * 2)
 print("l=\(l)")
 
 //: *3*
+//: *4.1*
+var rock4 = "Rock"
+var j4 = Character("j")
+var numOne4 = 11, numTwo4 = 45
+
+let message4 = rock4 + String(j4) + String(numOne4 + numTwo4)
+print(message4)
+//: *4.2*
+let wStar = """
+*   *   *
+ * * * *
+  *   *
+"""
+print(wStar)
+//: *4.3*
+var day = 12
+var month = " January "
+var year = 2021
+
+print(String(day) + month + String(year))
+//: *4*
+
 
 
 
