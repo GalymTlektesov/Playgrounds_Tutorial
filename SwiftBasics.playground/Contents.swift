@@ -17,6 +17,36 @@ public func whoIsBigger(a: Int, b: UInt){
     }
 }
 
+
+var type: String
+
+let monsterOneType: String? = "Dragon"
+type = monsterOneType!
+print(type)
+
+var monsterTwoType: String! = "Troll"
+type = monsterTwoType
+print(type)
+
+monsterTwoType = nil
+
+let MyLoveNumbers: (Int, Int, Int?) = (12, 44, nil)
+
+print(MyLoveNumbers)
+
+
+
+
+var myLikeNumber: Int?
+
+print(myLikeNumber)
+
+var trollAge: Int? = 95
+var myAgeOne = trollAge
+myAgeOne! += 100
+print(trollAge)
+
+
 //let myProgramStatus: (Int, String, Bool) = (200, "In Work", true)
 //let myProgramStatus : (stausCode: Int, statusText: String, statusConnect: Bool) = (200, "In Work", true)
 var myProgramStatus = (statusCode: 200, statusText: "In Work", statusConnect: true)
