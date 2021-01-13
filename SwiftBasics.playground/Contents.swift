@@ -18,6 +18,13 @@ public func whoIsBigger(a: Int, b: UInt){
 }
 
 
+var dragonAge = 230
+var isDragon: Bool = true
+
+assert(dragonAge >= 225, "Ваш дракон, слишком молод, чтобы программировать в дальнейшем")
+assert(isDragon != nil, "Дракон отсутствует")
+
+
 var type: String
 
 let monsterOneType: String? = "Dragon"
