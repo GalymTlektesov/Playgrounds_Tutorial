@@ -8,11 +8,10 @@ import UIKit
 Введите в аргуметы данные с типо Int, и функция вычислит наибольший среди них числовой параметр
  - parameter a:первое число
  - parameter b:второе число*/
-public func whoIsBigger(a: Int, b: UInt){
-    if a > b{
+public func whoIsBigger(a: Int, b: UInt) {
+    if a > b {
         print("\(a) > \(b)")
-    }
-    else {
+    } else {
         print("\(b) > \(a)")
     }
 }
@@ -22,7 +21,7 @@ var fiveMarkCount: Int? = 8
 if fiveMarkCount == nil {
     print("Пятерки отсутствуют")
 }
-else{
+else {
     let cakeForEachFiveMark = 2
     _ = cakeForEachFiveMark * fiveMarkCount!
 }
@@ -33,11 +32,77 @@ var marks = 0
 if let marks = markCount {
     print("Всего \(marks) оценок")
 }
-else{
+else {
     print("Оценки отсутствуют")
 }
 marks
 
+
+var userMark = 4
+switch userMark {
+    case 1:
+        print("Еденица на экзамене, это ужасно!")
+    case 2:
+        print("С двойкой ты останешься на второй год!")
+    case 3:
+        print("Ты плохо учил материал в этом году!")
+    case 4:
+        print("Неплохо, но могло быть и лучше!")
+    case 5:
+        print("Бесплатное место в университете тебе обеспечено!")
+    default:
+        break;
+}
+userMark = 4
+
+switch userMark {
+    case 1..<3:
+        print("Экзамен не сдан")
+    case 3..<5:
+        print("Экзаман сдан")
+    default:
+        assert(false, "Оценка \(userMark), вне досупного диапазона")
+}
+
+
+var level: Character = "B"
+
+switch level {
+    case "A":
+        print("Выключить все электрические приборы")
+        fallthrough
+    case "B":
+        print("Закрыть входные двери и окна")
+        fallthrough
+    case "C":
+    print("Соблюдать спокойствие")
+    default:
+        break
+}
+
+var dragonWeight: Float = 2.4
+var dragonColor = "Green"
+
+switch dragonColor {
+    case "Green" where dragonWeight < 2:
+        print("Поместить дракона в загон 1")
+    case "Red" where dragonWeight < 2:
+        print("Поместить дракона в загон 2")
+    case "Green",
+        "Red" where dragonWeight >= 2:
+        print("Поместить дракона в загон 3")
+    default:
+        break
+}
+
+switch userMark {
+    case _ where userMark > 1 && userMark < 3:
+        print("Экзамен не сдан!")
+    case _ where userMark >= 3:
+        print("Экзамен сдан!")
+    default:
+        assert(false, "Оценка \(userMark), вне доступного диапозона")
+}
 
 
 var coinsIsNewChest = "140"
@@ -46,7 +111,7 @@ var allCoinsCount = 1301
 if let coins = Int(coinsIsNewChest) {
     allCoinsCount += coins
 }
-else{
+else {
     print("У нового дракона нет золота")
 }
 
@@ -55,7 +120,7 @@ else{
 
 var logicVar = true
 
-if !logicVar{
+if !logicVar {
     print("Что????")
 }
 
@@ -65,11 +130,9 @@ var rentPrice = 0
 
 if tenantCout < 5 {
     rentPrice = 1000
-}
-else if tenantCout >= 5 && tenantCout <= 7 {
+} else if tenantCout >= 5 && tenantCout <= 7 {
     rentPrice = 800
-}
-else{
+} else {
     rentPrice = 500
 }
 
@@ -178,7 +241,7 @@ print(numOne)
 let binaryInteger = 0b101
 //: **Задание**
 
-func TaskNumber1(){
+func TaskNumber1() {
     var x: UInt8
     var y: Int8
     x = UInt8.max
@@ -202,16 +265,14 @@ func TaskNumber1(){
 
 
 
-func TaskNumber2()
-{
+func TaskNumber2() {
     let _: Float = 34.23
     let _: Float
     let _: Double
 }
 
 
-func TaskNumber3(){
-
+func TaskNumber3() {
     //: *3.1*
     let intNum: Int, floatNum: Float, doubleNUm: Double
     intNum = 18; floatNum = 16.4; doubleNUm = 5.7
@@ -244,7 +305,7 @@ func TaskNumber3(){
 
 
 
-func TaskNumber4(){
+func TaskNumber4() {
     let rock4 = "Rock"
     let j4 = Character("j")
     let
@@ -270,7 +331,7 @@ func TaskNumber4(){
 
 
 
-func TaskNumber5(){
+func TaskNumber5() {
     let isDragon = true, isTroll = false
 
     let onlyDragon = isDragon && isTroll
@@ -289,7 +350,7 @@ func TaskNumber5(){
 }
 
 
-func TaskNumber6(){
+func TaskNumber6() {
     typealias name = String
     typealias weight = Double
     typealias height = Int
@@ -303,7 +364,7 @@ func TaskNumber6(){
     print(myName6 + String(Float(imt)))
 }
 
-func TaskNumber7(){
+func TaskNumber7() {
     var myPreferences = (Movie: "Movie", number: 12,food: "Soup")
 
     let (movie, number, food) = myPreferences
@@ -322,19 +383,19 @@ func TaskNumber7(){
     print(hePreferences)
 }
 
-func TaskNumber8(){
+func TaskNumber8() {
     typealias Text = String
     let numberFirst: Text = "123"
     let numberSecond: Text = "422"
     let numberThree: Text = "nuber = 122"
     
-    if let number = Int(numberFirst){
+    if let number = Int(numberFirst) {
         print(number)
     }
-    if let number = Int(numberSecond){
+    if let number = Int(numberSecond) {
         print(number)
     }
-    if let number = Int(numberThree){
+    if let number = Int(numberThree) {
         print(number)
     }
     
@@ -345,13 +406,13 @@ func TaskNumber8(){
     let tupleThree: TupleType = ("-67", "70")
     
     
-    if tupleOne?.numberOne != nil && tupleOne?.numberTwo != nil{
+    if tupleOne?.numberOne != nil && tupleOne?.numberTwo != nil {
         print(tupleOne as Any)
     }
-    if tupleTwo?.numberOne != nil && tupleTwo?.numberTwo != nil{
+    if tupleTwo?.numberOne != nil && tupleTwo?.numberTwo != nil {
         print(tupleTwo as Any)
     }
-    if tupleThree?.numberOne != nil && tupleThree?.numberTwo != nil{
+    if tupleThree?.numberOne != nil && tupleThree?.numberTwo != nil {
         print(tupleThree as Any)
     }
 }
